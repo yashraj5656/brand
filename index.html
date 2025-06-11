@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brand Identity Design Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f0f4f8, #e2e8f0);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+      color: #1e293b;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      padding: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .gallery {
+      margin-top: 20px;
+      padding: 20px;
+      background: #e5e7eb;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border: 2px dashed #94a3b8;
+    }
+
+    .placeholder {
+      background: #cbd5e1;
+      height: 120px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      font-weight: bold;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      background: #f1f5f9;
+      padding: 25px;
+      text-align: center;
+      color: #475569;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brand Identity</h1>
+    <p>Professional Brand Identity Design for Enhanced User Engagement</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Objective</h2>
+      <p>To create a cohesive, modern, and visually engaging brand identity that resonates with the target audience, builds trust, and boosts user interaction across digital and print platforms.</p>
+    </div>
+
+    <div class="card">
+      <h2>Key Deliverables</h2>
+      <ul>
+        <li>Logo Design (Primary, Secondary, Icon)</li>
+        <li>Color Palette (Psychology-driven choices)</li>
+        <li>Typography System (Web-friendly & distinctive)</li>
+        <li>Brand Patterns & Graphics</li>
+        <li>Social Media Kit</li>
+        <li>Business Cards & Stationery</li>
+        <li>Brand Style Guide (Usage rules, tone, spacing)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Design Approach</h2>
+      <ul>
+        <li><strong>User-Centered Design</strong> – Aesthetics and clarity to improve first impressions.</li>
+        <li><strong>Consistency</strong> – Unified visuals across platforms.</li>
+        <li><strong>Emotionally Resonant</strong> – Trustworthy and engaging visuals.</li>
+        <li><strong>Scalability</strong> – Optimized from mobile to billboard.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Tools Used</h2>
+      <p>Adobe Illustrator, Figma, Photoshop, InDesign</p>
+    </div>
+
+    <div class="card">
+      <h2>Result</h2>
+      <ul>
+        <li>✅ Brand recognition increased by <strong>35%</strong> in the first quarter</li>
+        <li>✅ Improved trust and conversions across platforms</li>
+        <li>✅ Fully scalable and systemized brand</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <button id="showGallery">Show Visual Samples</button>
+      <div class="gallery hidden" id="gallery">
+        <p>✨ Insert your logo mockups, typography, and color palette images here ✨</p>
+        <div class="placeholder">[Sample Visual 1]</div>
+        <div class="placeholder">[Sample Visual 2]</div>
+        <div class="placeholder">[Style Guide Preview]</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Elevate Branding. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("showGallery").addEventListener("click", function () {
+      const gallery = document.getElementById("gallery");
+      gallery.classList.toggle("hidden");
+      this.textContent = gallery.classList.contains("hidden")
+        ? "Show Visual Samples"
+        : "Hide Visual Samples";
+    });
+  </script>
+
+</body>
+</html>
