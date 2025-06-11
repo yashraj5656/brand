@@ -98,6 +98,16 @@
       color: #475569;
       font-weight: bold;
     }
+    .sample-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
 
     .hidden {
       display: none;
@@ -163,7 +173,23 @@
       </ul>
     </div>
 
-
+    <section class="card">
+      <a href="https://example.com/mockups" target="_blank" style="
+        display: block;
+        text-align: center;
+        margin: 20px auto 0;
+        padding: 12px 24px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      " onmouseover="this.style.background='#1d4ed8'" onmouseout="this.style.background='#2563eb'">
+        View Visual Mockups
+      </a>
+    </section>
+    
   </main>
 
   <footer>
